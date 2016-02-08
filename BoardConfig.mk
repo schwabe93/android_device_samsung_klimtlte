@@ -19,7 +19,7 @@ LOCAL_PATH := device/samsung/klimtlte
 # RIL
 BOARD_PROVIDES_LIBRIL := true
 # hardware/samsung/ril
-BOARD_MODEM_TYPE := xmm7260
+BOARD_MODEM_TYPE := xmm6360
 # RIL.java overwrite
 BOARD_RIL_CLASS := ../../../$(LOCAL_PATH)/ril
 
