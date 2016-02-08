@@ -14,6 +14,8 @@
 
 LOCAL_PATH := $(call my-dir)
 
+ifneq ($(filter klimtlte, $(TARGET_DEVICE)),)
+
 # Audio HAL
 include $(CLEAR_VARS)
 
@@ -59,3 +61,5 @@ LOCAL_MODULE_CLASS := ETC
 LOCAL_SRC_FILES := mixer_paths.xml
 LOCAL_MODULE_PATH := $(TARGET_OUT_ETC)
 include $(BUILD_PREBUILT)
+
+endif

@@ -18,6 +18,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/telephony.mk)
 
 # Inherit from klimtlte device
 $(call inherit-product, device/samsung/klimtlte/device.mk)
+$(call inherit-product, device/samsung/klimtwifi/device-common.mk)
 
 # Discard inherited values and use our own instead.
 PRODUCT_NAME := full_klimtlte
@@ -25,3 +26,6 @@ PRODUCT_DEVICE := klimtlte
 PRODUCT_BRAND := samsung
 PRODUCT_MANUFACTURER := samsung
 PRODUCT_MODEL := SM-T705
+
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    PRODUCT_NAME=klimtlte
