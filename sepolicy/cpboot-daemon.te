@@ -23,11 +23,13 @@ allow cpboot-daemon kmsg_device:chr_file rw_file_perms;
 allow cpboot-daemon mif_device:chr_file rw_file_perms;
 # /dev/mbin0
 allow cpboot-daemon emmcblk_device:blk_file r_file_perms;
+
 # /dev/block/mmcblk0p13
 allow cpboot-daemon block_device:dir r_dir_perms;
 
 # /dev/ehci_power
 allow cpboot-daemon sysfs_usb_power_writable:file rw_file_perms;
+
 # /dev/mipi-lli/lli_control
 allow cpboot-daemon sysfs_mipi_writable:file rw_file_perms;
 
