@@ -19,9 +19,10 @@ include $(CLEAR_VARS)
 LOCAL_SRC_FILES := \
     Fence.cpp \
     GraphicBufferMapper.cpp \
-    samsung_ril.cpp
+    samsung_ril.cpp \
+    libdmitry.cpp
 
-LOCAL_SHARED_LIBRARIES := libbinder libui
+LOCAL_SHARED_LIBRARIES := libbinder libui liblog libcutils libgui libutils
 
 LOCAL_MODULE := libsamsung_symbols
 LOCAL_MODULE_TAGS := optional
