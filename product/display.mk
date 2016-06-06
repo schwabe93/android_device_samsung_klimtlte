@@ -6,8 +6,8 @@ TARGET_SCREEN_WIDTH := 1600
 PRODUCT_CHARACTERISTICS := tablet
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    lockscreen.rot_override=true
-    ro.sf.lcd_density=320
+    lockscreen.rot_override=true \
+    ro.sf.lcd_density=320 \
     ro.opengles.version=196608
 
 # Device uses high-density artwork where available
