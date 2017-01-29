@@ -7,13 +7,13 @@ $(call inherit-product, device/samsung/klimtlte/device.mk)
 
 PRODUCT_BRAND := samsung
 
-# Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/cm/config/common_full_tablet_wifionly.mk)
+# Inherit some common AOKP stuff.
+$(call inherit-product, vendor/aokp/configs/common_full_tablet_wifionly.mk)
 
-# Inherit more LineageOS stuff.
-$(call inherit-product, vendor/cm/config/telephony.mk)
+# Inherit more AOKP stuff.
+$(call inherit-product, vendor/aokp/configs/telephony.mk)
 
-PRODUCT_NAME := lineage_klimtlte
+PRODUCT_NAME := aokp_klimtlte
 PRODUCT_DEVICE := klimtlte
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
